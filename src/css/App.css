@@ -24,6 +24,8 @@ body, html {
   transform: translate(-50%, -50%);
   align-items: center;
   justify-content: center;
+  /* background-image: url(../../1.jpg);
+  background-size: cover; */
   
 }
 
@@ -32,7 +34,7 @@ body, html {
   flex-direction: column;
   margin-top: 300px;
   padding: 20px 30px;
-  background-color: rgba(113, 146, 228, 0.1);
+  background-color: rgba(134, 159, 219, 0.1);
   text-align: center;
   justify-content: center;
   letter-spacing: 0.9px;
@@ -132,11 +134,20 @@ button {
 }
 button:hover {
   background-color: rgb(70, 134, 45);
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
   font-size: 17px;
   color: #fff;
 
 }
 nav .free {
   margin-left: auto;
+}
+
+.rd-btn a:hover{
+  background-color: rgb(9, 135, 9);
+  color: #fff;
+}
+
+.profile-name{
+  cursor: pointer;
 }

@@ -1,0 +1,1 @@
+{"name":"Chocolatey CLI","desc":"Chocolatey - like yum or apt-get, but for Windows","site":"https://github.com/chocolatey/choco","tags":["chocolatey","c#",".net"],"upforgrabs":{"name":"Up For Grabs","link":"https://github.com/chocolatey/choco/labels/Up%20For%20Grabs"},"stats":{"issue-count":98,"last-updated":"2023-02-16T12:11:34Z"}}
