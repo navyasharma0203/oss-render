@@ -4,6 +4,7 @@ import { AuthContext } from '../context/AuthContext.jsx';
 import { signInWithPopup, signOut } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 
+
 const LoginButton = () => {
   const { user } = useContext(AuthContext);
   const navigate = useNavigate();
