@@ -23,23 +23,28 @@ function MainPage() {
     desc: ''
   });
 
-  useEffect(() => {
     async function fetchData() {
       try {
-        let dataArray = [];
-        for(let i = 1; i <= 200; i++) {
-          const { data } = await axios.get(`../../json/data (${i}).json`);
-          dataArray.push(data)
-          console.log(data)
-        }
-        setPosts(dataArray)
-      } catch (error) {
+        
+           const res  = await fetch('http://127.0.0.1:5000/similar_repos',{
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            }, 
+            body: JSON.stringify({
+              query : name,
+
+            })
+          });
+          const data = await res.json();
+          setPosts(data)
+         
+      } 
+      catch (error) {
         console.log(error);
       }
     }
-    fetchData();
-  }, []);
-  
+
 
   useEffect(() => {
     if (!user) {
@@ -54,6 +59,7 @@ function MainPage() {
       tags,
       desc
     })
+    fetchData()
   }
 
   return (
