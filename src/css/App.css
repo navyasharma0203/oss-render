@@ -24,8 +24,8 @@ body, html {
   transform: translate(-50%, -50%);
   align-items: center;
   justify-content: center;
-  /* background-image: url(../../1.jpg);
-  background-size: cover; */
+  /* background-image: linear-gradient(to right, #4a59ae, #dbdcf9); */
+  background-size: cover;
   
 }
 
@@ -51,7 +51,7 @@ body, html {
   font-size: 22px;
   opacity: 0.9;
   line-height: 30px;
-  color: rgb(62, 62, 162);
+  color: rgb(46, 46, 121);
 
 }
 
@@ -191,4 +191,12 @@ nav .free {
 .stext{
   color: rgb(37, 67, 102);
   font-weight: 600;
+}
+
+.nav-bg{
+  background-image: linear-gradient(to right, #2b37bc, #dbdcf9);
+}
+
+.profile-name{
+  color: #0d2a3c;
 }

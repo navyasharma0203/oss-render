@@ -30,7 +30,7 @@ const LoginButton = () => {
     <>
       {user ? (
         <div className="flex items-center">
-        <p className=" profile-name text-md text-white-600 bg-blue-400 font-bold py-2 px-4 rounded">Hi {user.displayName}</p>
+        <p className=" profile-name text-md font-bold py-2 px-4 rounded">Hi {user.displayName}</p>
         <button
           className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
           onClick={handleSignOut}
