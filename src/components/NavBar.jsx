@@ -64,7 +64,7 @@ export default function NavBar() {
                 <a href="#">Blog</a>
               </li>
               <li className="text-white hover:text-indigo-200">
-                <a href="#">About US</a>
+                <a href="#about">About US</a>
               </li>
               <li className="text-white hover:text-indigo-200">
                 <a href="#">Contact US</a>
