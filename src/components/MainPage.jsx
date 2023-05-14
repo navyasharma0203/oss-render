@@ -25,8 +25,25 @@ function MainPage() {
 
     async function fetchData() {
       try {
-        
+        let searchedPosts=[];
            const res  = await fetch('http://127.0.0.1:5000/similar_repos',{
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            }, 
+            body: JSON.stringify({
+              query : tags,
+
+            })
+          });
+          const data = await res.json();
+          if (data.status === "success"){
+            searchedPosts=[...data.msg]
+          }
+        
+       
+          
+          const res2  = await fetch('http://127.0.0.1:5000/similar_repos',{
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
@@ -36,8 +53,16 @@ function MainPage() {
 
             })
           });
-          const data = await res.json();
-          setPosts(data)
+          const data2 = await res2.json();
+          if (data2.status === "success"){
+            searchedPosts=[...searchedPosts, ...data2.msg]
+          }
+          if (searchedPosts.length === 0){
+            alert("No results found")
+          } else {
+            setPosts(searchedPosts)
+          }
+          console.log(searchedPosts)
          
       } 
       catch (error) {

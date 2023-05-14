@@ -24,7 +24,8 @@ body, html {
   transform: translate(-50%, -50%);
   align-items: center;
   justify-content: center;
-  /* background-image: linear-gradient(to right, #4a59ae, #dbdcf9); */
+  background-color: rgba(202, 223, 243, 0.3);
+  /* background-image: linear-gradient(to right, #727ad8, #dbdcf9); */
   background-size: cover;
   
 }
@@ -159,7 +160,8 @@ nav .free {
   border-radius: 10px;
   background-color: #94acd1;
   padding: 5px;
-  color: rgb(251, 244, 244);
+  color: #1e425b;
+  font-weight: 600;
   display: flex;
   justify-content: center;
   font-family: poppins;
@@ -194,9 +196,16 @@ nav .free {
 }
 
 .nav-bg{
-  background-image: linear-gradient(to right, #2b37bc, #dbdcf9);
+  background-color: rgba(85, 118, 152, 0.3);
+  color: black;
+   
 }
 
 .profile-name{
   color: #0d2a3c;
 }
+
+.lbtn{
+  background-color: rgb(78, 107, 141);
+}
+

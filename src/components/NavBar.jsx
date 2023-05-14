@@ -5,12 +5,12 @@ export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="w-full nav-bg shadow z-50 fixed top-0">
+    <nav className="backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-200 w-full nav-bg shadow z-50 fixed top-0">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <a href="#">
-              <h2 className="text-2xl font-bold text-white">LOGO</h2>
+              <h2 className="text-2xl font-bold text-black">LOGO</h2>
             </a>
             <div className="md:hidden">
               <button
@@ -57,16 +57,16 @@ export default function NavBar() {
             }`}
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <li className="text-white hover:text-indigo-200">
+              <li className="text-black hover:text-blue-600">
                 <a href="#">Home</a>
               </li>
-              <li className="text-white hover:text-indigo-200">
+              <li className="text-black hover:text-blue-600">
                 <a href="#">Blog</a>
               </li>
-              <li className="text-white hover:text-indigo-200">
+              <li className="text-black hover:text-blue-600">
                 <a href="#about">About US</a>
               </li>
-              <li className="text-white hover:text-indigo-200">
+              <li className="text-black hover:text-blue-600">
                 <a href="#">Contact US</a>
               </li>
             </ul>
