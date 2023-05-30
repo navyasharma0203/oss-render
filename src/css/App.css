@@ -6,6 +6,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
 body, html {
   font-family: 'Poppins', sans-serif;
   -moz-osx-font-smoothing: grayscale;
@@ -14,6 +17,11 @@ body, html {
 
 .bg{
   background-color: #94acd1;
+}
+
+.logo{
+  font-family: 'Dancing Script';
+
 }
 
 .container{
