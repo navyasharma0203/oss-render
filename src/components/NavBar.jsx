@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import LoginButton from './LoginButton';
 
+
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
 
@@ -10,7 +11,7 @@ export default function NavBar() {
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <a href="#">
-              <h2 className="text-2xl font-bold text-black">LOGO</h2>
+              <h2 className="logo text-3xl font-bold text-blue-800">Selectify</h2>
             </a>
             <div className="md:hidden">
               <button
@@ -62,6 +63,9 @@ export default function NavBar() {
               </li>
               <li className="text-black hover:text-blue-600">
                 <a href="#">Blog</a>
+              </li>
+              <li className="text-black hover:text-blue-600">
+                <a href="#">My Saves</a>
               </li>
               <li className="text-black hover:text-blue-600">
                 <a href="#about">About US</a>

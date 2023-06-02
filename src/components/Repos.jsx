@@ -1,4 +1,6 @@
 import React from 'react'
+import { BsFillBookmarkFill } from 'react-icons/bs';
+import {AiOutlineInfoCircle} from 'react-icons/ai';
 
 
 
@@ -25,12 +27,30 @@ function Repos({ posts, name, tags, desc }) {
                                     ))}
                                     </div> */}
 
+<div className="extra-btn">
+    
+                                <div className = "small-btn">
+                                    <div className=' flex justify-end items-center'>
+                                        <a className=" sbtn hover:cursor-pointer">
+                                            <div className="s-btn"><BsFillBookmarkFill className="text-cyan-600 hover:text-teal-800  text-2xl" /></div>
+                                        </a>
+                                    </div>
 
-                            <div className='rd-btn flex justify-end items-center'>
-                                <a href={link} className="rd-btn text-sm text-blue-100 bg-blue-600 rounded shadow px-8 py-2">
-                                    Read more
-                                </a>
-                            </div>
+                                    <div className=' flex justify-end items-center'>
+                                        <a className=" ibtn hover:cursor-pointer">
+                                            <div className="s-btn"><AiOutlineInfoCircle className="text-indigo-500 hover:text-lime-800 text-2xl ml-2" /></div>
+                                        </a>
+                                    </div>
+                                  
+                                </div>
+    
+    
+                                <div className='rd-btn flex justify-end items-center'>
+                                    <a href={link} className="rd-btn text-sm text-blue-100 bg-blue-600 rounded shadow px-8 py-2">
+                                        Read more
+                                    </a>
+                                </div>
+</div>
                     </div>
                 ))}
             </div>
