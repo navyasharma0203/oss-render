@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from './NavBar';
+import Footer from './Footer';
 import Repos from './Repos';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
@@ -169,9 +170,10 @@ function MainPage() {
           </div>
         </div>
       </div>
-
       <Repos posts={posts} name={search.name} tags={search.tags} desc={search.desc} />
+      <Footer />
     </>
+    
   );
 }
 
