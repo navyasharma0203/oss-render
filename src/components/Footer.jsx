@@ -8,7 +8,7 @@ import { AiFillFacebook } from "react-icons/ai";
 
 export default function App() {
   return (
-    <footer className="backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-200 w-full nav-bg shadow z-50 bottom-0 py-8 mt-16">
+    <footer className="backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-200 w-full nav-bg shadow z-50 bottom-0 py-20 mt-20">
       <div className="justify-center px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-58 mx:150px">
         
         <div className="btns">
@@ -47,7 +47,7 @@ export default function App() {
           </div>
       
           <div className='flex justify-center mt-4'>
-            <br />© 2020 Copyright : MDBootstrap.com
+            <br />© 2023 Copyright : Selectify.com
           </div>
 
         </div>

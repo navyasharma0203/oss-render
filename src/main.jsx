@@ -5,7 +5,7 @@ import { createRoot } from 'react-dom/client';
 import { AuthProvider } from './context/AuthContext';
 import HomePage from './components/HomePage';
 import MainPage from './components/MainPage';
-
+import MySaves from './components/MySaves'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -18,6 +18,10 @@ const router = createBrowserRouter([
     path: '/main',
     element: <MainPage />,
   },
+  {
+    path: '/mysaves',
+    element: <MySaves />
+  }
 ]);
 
 createRoot(document.getElementById('root')).render(

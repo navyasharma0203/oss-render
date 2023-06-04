@@ -219,3 +219,81 @@ nav .free {
   display: flex;
   justify-content: space-between;
 }
+
+.click-box{
+  margin-top: 100px;
+}
+
+.foot{
+  margin-top: 330px;
+}
+
+.click-btn{
+ display: flex;
+ justify-self: center;
+ background-color: hsl(206, 40%, 40%);
+ color: white;
+ width: 30%;
+ transform: translateX(100%);
+}
+
+.save-box{
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+  background-color: #e7eefe;
+  width: 30%;
+}
+
+.repo-title{
+  font-size: larger;
+  font-weight: 600;
+  padding: 5px;
+  color: #314fb9;
+  margin-top: 10px;
+}
+
+.repo-desc{
+  font-size: medium;
+  font-weight: 500;
+  padding: 5px;
+  color: #1e425b;
+  margin-bottom: 25px;
+
+}
+
+.repo-link{
+  bottom: 0;
+  background-color: hsl(206, 33%, 50%);
+  padding: 8px;
+  width: 110px;
+  border-radius: 5px ;
+  color: #fff;
+  font-size: medium;
+  display: flex;
+  justify-content: center;
+
+}
+
+.repo-link:hover{
+  background-color: rgb(9, 135, 9);
+  cursor: pointer;
+}
+
+.saveAll-box{
+  margin: 20px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+
+  @media screen and (max-width: 900px) {
+    .saveAll-box {
+      flex-direction: column;
+    }
+
+    .save-box{
+      width: 90%;
+    }
+  }
+  

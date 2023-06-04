@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import LoginButton from './LoginButton';
-
+import { useNavigate } from 'react-router-dom';
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
-
+  const navigate = useNavigate()
   return (
     <nav className="backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-200 w-full nav-bg shadow z-50 fixed top-0">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
@@ -65,7 +65,9 @@ export default function NavBar() {
                 <a href="#">Blog</a>
               </li>
               <li className="text-black hover:text-blue-600">
-                <a href="#">My Saves</a>
+                <a href="#" onClick={() => {
+                  navigate('/mysaves')
+                }}>My Saves</a>
               </li>
               <li className="text-black hover:text-blue-600">
                 <a href="#about">About US</a>
