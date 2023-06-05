@@ -62,6 +62,7 @@ function MainPage() {
             alert("No results found")
           } else {
             setPosts(searchedPosts)
+            console.log(searchedPosts)
           }
           console.log(searchedPosts)
          

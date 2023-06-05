@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
-import Repos from "./Repos";
 
 export default function MySaves() {
   const [user] = useAuthState(auth);
