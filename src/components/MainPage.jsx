@@ -91,7 +91,7 @@ function MainPage() {
   return (
     <>
       <NavBar />
-      <div class="grid grid-cols-3 gap-2 w-full my-16 pl-20 relative">
+      <div class="main-box grid grid-cols-3 gap-2 w-full my-16 pl-20 relative">
         <div class="flex flex-col col-span-1 items-left m-5 p-5 pl-16 popular-box">
           <h2 class="text-2xl mb-5 hd-box">Popular Searches</h2>
 
