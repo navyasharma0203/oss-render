@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import LoginButton from './LoginButton';
 import { useNavigate } from 'react-router-dom';
+import MainPge from './MainPage';
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
@@ -59,7 +60,9 @@ export default function NavBar() {
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li className="text-black hover:text-blue-600">
-                <a href="#">Home</a>
+                <a href="#" onClick={() => {
+                  navigate('/main')
+                }}>Home</a>
               </li>
               <li className="text-black hover:text-blue-600">
                 <a href="#">Blog</a>
